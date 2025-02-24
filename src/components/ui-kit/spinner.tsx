@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 
 interface SpinnerProps {
 	size?: number;
@@ -10,7 +10,7 @@ const Spinner: React.FC<SpinnerProps> = ({
 	borderColor = 'border-blue-500',
 }) => {
 	return (
-		<div className="absolute w-full h-full inset-0 flex justify-center items-center backdrop-blur-xs">
+		<div className="absolute w-full h-full inset-0 flex justify-center items-center backdrop-blur-xs z-20">
 			<div
 				className={`animate-spin rounded-full border-4 ${borderColor} border-t-transparent`}
 				style={{ width: size, height: size }}

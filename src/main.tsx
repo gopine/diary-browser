@@ -8,7 +8,7 @@ const root = document.getElementById('root');
 
 if (root) {
 	createRoot(root).render(
-		<BrowserRouter>
+		<BrowserRouter basename="diary-browser">
 			<DiaryProvider>
 				<Routings />
 			</DiaryProvider>
