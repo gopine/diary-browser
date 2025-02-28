@@ -56,10 +56,8 @@ The application is deployed on GitHub Pages. To deploy your own version, follow 
    ```sh
    npm run build
    ```
-2. Deploy to the `pages` branch manually or use the deploy script:
-   ```sh
-   npm run deploy
-   ```
+2. Deploy to the `pages` branch manually
+
 
 ## Acknowledgements
 
