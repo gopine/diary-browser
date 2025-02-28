@@ -52,11 +52,7 @@ To get a local copy up and running, follow these simple steps.
 
 The application is deployed on GitHub Pages. To deploy your own version, follow these steps:
 
-1. Build the project
-   ```sh
-   npm run build
-   ```
-2. Deploy to the `pages` branch manually or use the deploy script:
+Deploy to the `pages` branch manually or use the deploy script:
    ```sh
    npm run deploy
    ```
