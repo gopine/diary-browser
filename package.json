@@ -11,7 +11,8 @@
     "format": "biome format --write ./src/",
     "preview": "vite preview",
     "gh-pages": "gh-pages",
-    "deploy": "npm run build && gh-pages -d dist"
+    "copy-404": "copy 404.html .\\dist\\404.html",
+    "deploy": "npm run build && copy 404.html .\\dist\\404.html && gh-pages -d dist"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
