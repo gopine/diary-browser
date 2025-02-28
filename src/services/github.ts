@@ -36,7 +36,7 @@ export async function listYears(): Promise<GithubContent[]> {
 	if (rawContent.message) {
 		throw new Error(rawContent.message);
 	}
-	return rawContent.map(mapGitHubContent);
+	return rawContent.filter((a: any) => a.type === 'dir').map(mapGitHubContent);
 }
 
 export async function listMonths(
