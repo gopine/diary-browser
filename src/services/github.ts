@@ -49,6 +49,7 @@ export async function listMonths(
 		throw new Error(rawContent.message);
 	}
 	return rawContent
+		.filter((a: any) => a.type === 'dir')
 		.map(mapGitHubContent)
 		.sort((a: GithubContent, b: GithubContent) => {
 			return (
